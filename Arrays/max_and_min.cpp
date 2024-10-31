@@ -1,5 +1,6 @@
 // creating a program to find the maximum and the minimum of the array
 
+
 #include <iostream>
 using namespace std;
 
@@ -8,7 +9,7 @@ int main(){
     int arr_size = sizeof(arr)/ sizeof(int);
     int max = arr[0], min = arr[0]; // comparing the numbers with respect to the array's first element
     
-    for (int i = 1; i<=arr_size; i++){ // traversing from the second element
+    for (int i = 1; i<=(arr_size-1); i++){ // traversing from the second element | (arr_size - 1) to indicate the end of the array
         if (arr[i] < min){
             min = arr[i];
         }
@@ -23,3 +24,5 @@ int main(){
     
     return 0;
 }
+
+// Could also make seperate functions
